@@ -133,14 +133,14 @@ console.log(hourse, minutes, seconds);
             !isPaused && (
               <button
               onClick={handlePause}
-               className="text-white text-xl w-28 h-11 bg-blue-500 rounded-xl">Pause</button>
+               className="text-white text-xl w-28 h-11 bg-red-600 rounded-xl">Pause</button>
             )
           }
           {
             isPaused && (
               <button
               onClick={handleResume}
-              className="text-white   text-xl w-28 h-11 bg-blue-500 rounded-xl">Resume</button>
+              className="text-white   text-xl w-28 h-11 bg-green-500 rounded-xl">Resume</button>
             )
           }
           <button
