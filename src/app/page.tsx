@@ -47,6 +47,11 @@ const handleInput = (e:any) => {
   console.log(e.target.id, e.target.value);
   const value = parseInt(e.target.value);
   const id = e.target.id;
+  if (isNaN(value) ) {
+    alert("Please enter numbers only.");
+    return; // Exit the function if the input is invalid
+  }
+  
   if (id=== "hours"){
     setHours(value);
   } else if (id === "minutes"){
