@@ -56,7 +56,7 @@ const handleInput = (e:any) => {
   }
 }
 
-const runTimer = (sec:any, min:any, hr:any, tid:any) => {
+const runTimer = (sec:any, min:any, hr:any, tid?:any) => {
   if (sec > 0){
     setSeconds((s) => s-1);
   }else if (sec === 0 && min > 0){
